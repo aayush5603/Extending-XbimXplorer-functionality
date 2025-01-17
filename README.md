@@ -10,16 +10,14 @@ Develop |[![Build Status](https://dev.azure.com/xBIMTeam/xBIMToolkit/_apis/build
 
 I successfully added a functionality where in the user can load the database(containing damage information of the model) along with the 3D model. Once that is done, the damage data of each and every single part of the model(if present in the database) will be displayed when the user clicks on it and the damage analysis can be done on the go. I have also commented the code as well for better understanding.
 
-# Task - to load the database containing damage and show the section level damage of Hüllrohr and Spannstahl
+# My task - Load the database containing damage data
 
-Go to the XbimXplorer folder, there you will find the files. 
+Go to the XbimXplorer folder, there you will find the files. .xaml file takes care of the UI and .cs file takes care of the logic.
 
-.XAML file changes :
-
+.xaml file changes :
 - added Database button to the menubar and a dropdown showing Load Database.
 
 .cs file changes :
-
 - Made a class called DamageData which stores the database values.
 - Load Database Click method which shows what happens once the Load Database button is clicked 
 - Spatial Control Mouse Double Click is the method where the comparison of database name and clicked element name occurs and then damage is displayed.
